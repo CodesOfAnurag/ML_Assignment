@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # Single Layer Perceptron Implementation
+
+# ## Importing Modules
+
 # In[1]:
 
 
@@ -114,7 +118,6 @@ df.to_csv("RandomDataSet.csv", index=False)
 
 
 # ## Single Layer Perceptron on RandomDataSet
-
 # ### Reading RandomDataSet.csv
 
 # In[7]:
