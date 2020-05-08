@@ -8,7 +8,10 @@
 # In[1]:
 
 
+# using for manipulating dataset
 import numpy as np
+
+# using for Creating dataset and visualization only
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -277,4 +280,25 @@ ShowConfusionMatrix(testLabel, predicted)
 
 
 CalculateMetrics(confusion)
+
+
+# ### Extra : Reading same dataset without using pandas and Storing it as Numpy Array
+
+# In[25]:
+
+
+import numpy as np
+
+def read_csv(filename):
+    datafile = open(filename, 'r')
+    data=list()
+
+    for i in datafile.readlines()[1:]:
+        data.append((list(map(float,i.strip().split(',')))))
+
+    return np.asarray(data)
+
+data = read_csv("RandomDataSet.csv")
+print(type(data))
+print("First 5 rows:\n",data[:5])
 
