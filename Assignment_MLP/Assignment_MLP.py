@@ -284,7 +284,7 @@ CalculateMetrics(confusion)
 
 # ### Extra : Using only Numpy
 
-# In[33]:
+# In[25]:
 
 
 import numpy as np
