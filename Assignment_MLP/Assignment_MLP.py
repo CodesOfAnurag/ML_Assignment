@@ -282,9 +282,9 @@ ShowConfusionMatrix(testLabel, predicted)
 CalculateMetrics(confusion)
 
 
-# ### Extra : Reading same dataset without using pandas and Storing it as Numpy Array
+# ### Extra : Using only Numpy
 
-# In[25]:
+# In[33]:
 
 
 import numpy as np
@@ -300,5 +300,21 @@ def read_csv(filename):
 
 data = read_csv("RandomDataSet.csv")
 print(type(data))
-print("First 5 rows:\n",data[:5])
+print(f"\nFirst 5 rows:\n{data[:5]}\n")
+
+test = np.vstack((data[:20], data[80:]))
+train = data[20:80]
+
+features = train[:,:-1]
+labels = train[:,-1]
+
+p = Perceptron(features.shape[1])
+print()
+p.train(features, labels)
+print()
+testLabel, predicted = p.DoPredict(test)
+
+confusion = GenerateConfusionMatrix(testLabel, predicted)
+print(f"\n{confusion}\n")
+CalculateMetrics(confusion)
 
