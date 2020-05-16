@@ -8,8 +8,12 @@
 <pre>ML_Assignment
   │   README.md
   └───Assignment_MLP
-          Assignment_MLP.ipynb
-          Assignment_MLP.py
+  |       Assignment_MLP.ipynb
+  |       Assignment_MLP.py
+  |       RandomDataSet.csv
+  |       sonar.all-data.csv
+  └───Assignment_SVM1
+          Assignment_SVM1.ipynb
+          Assignment_SVM1.py
           RandomDataSet.csv
-          sonar.all-data.csv
 </pre>
