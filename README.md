@@ -13,7 +13,11 @@
   |       RandomDataSet.csv
   |       sonar.all-data.csv
   └───Assignment_SVM1
-          Assignment_SVM1.ipynb
-          Assignment_SVM1.py
-          RandomDataSet.csv
+  |       Assignment_SVM1.ipynb
+  |       Assignment_SVM1.py
+  |       RandomDataSet.csv
+  └───Assignment_KMeans
+          Assignment_KMeans.ipynb
+          Assignment_KMeans.py
+          kmean_dataset.csv
 </pre>
